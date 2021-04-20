@@ -23,7 +23,7 @@ public class UcastniciController {
             new Ucastnik("Panenka", "Maková", "Mákovice", Pohlavi.ZENA, "https://www.postavy.cz/foto/makova-panenka-foto.jpg"),
             new Ucastnik("Emanuel", "Motýl", "Luční Bouda", Pohlavi.MUZ, "https://www.postavy.cz/foto/motyl-emanuel-foto.jpg"),
             new Ucastnik("Čarodějnice", "Malá", "Chaloupka", Pohlavi.ZENA, "https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=TRG002m"),
-            new Ucastnik("Amálka", "Víla", "Lesní studánka", Pohlavi.ZENA, "https://www.veselepohadky.cz/assets/nahlady-kategorie/116/vila-amalka-pohadka.jpg"),
+            new Ucastnik("Amálka", "Víla", null, Pohlavi.ZENA, "https://www.veselepohadky.cz/assets/nahlady-kategorie/116/vila-amalka-pohadka.jpg"),
             new Ucastnik("Vševěd", "Rákosníček", "rybníček Brčálník", Pohlavi.MUZ, "http://www.supermamina.cz/files/img/201304072252_mlha.png")
     );
   }
