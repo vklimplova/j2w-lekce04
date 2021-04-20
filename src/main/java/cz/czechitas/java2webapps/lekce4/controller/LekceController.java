@@ -2,7 +2,6 @@ package cz.czechitas.java2webapps.lekce4.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.Mapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -14,7 +13,6 @@ public class LekceController {
 
   /**
    * Metoda kontroleru obsluhující adresu {@code /lekce/}. Používá šablonu {@code /templates/lekce/index.html}.
-   *
    */
   @GetMapping("/")
   public String lekce() {
