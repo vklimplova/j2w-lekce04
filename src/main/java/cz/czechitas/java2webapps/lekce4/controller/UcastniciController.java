@@ -33,7 +33,7 @@ public class UcastniciController {
    *
    * Metoda kontroleru obsluhující adresu {@code /ucastnici/}. Používá šablonu {@code /templates/ucastnici/index.html}.
    */
-  @RequestMapping("/")
+  @GetMapping("/")
   public ModelAndView ucastnici() {
     ModelAndView modelAndView = new ModelAndView("ucastnici/index");
     modelAndView.addObject("ucastnici", ucastnici);
@@ -45,7 +45,7 @@ public class UcastniciController {
    *
    * Metoda kontroleru obsluhující adresu {@code /ucastnici/detail}. Používá šablonu {@code /templates/ucastnici/detail.html}.
    */
-  @RequestMapping("/detail")
+  @GetMapping("/detail")
   public ModelAndView detail(int id) {
     ModelAndView modelAndView = new ModelAndView("ucastnici/detail");
     modelAndView.addObject("ucastnik", ucastnici.get(id));
