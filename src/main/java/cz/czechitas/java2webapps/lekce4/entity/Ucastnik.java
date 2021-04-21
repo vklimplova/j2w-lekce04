@@ -8,7 +8,6 @@ public class Ucastnik {
   private String prijmeni;
   private String bydliste;
   private Pohlavi pohlavi;
-
   private String fotka;
 
   public Ucastnik() {

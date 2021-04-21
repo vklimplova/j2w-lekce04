@@ -5,6 +5,7 @@ import cz.czechitas.java2webapps.lekce4.entity.Ucastnik;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Arrays;
@@ -14,7 +15,7 @@ import java.util.List;
  * Kontroler obsluhující sekci účastníků.
  */
 @Controller()
-@RequestMapping("/ucastnici")
+@RequestMapping(value = "/ucastnici")
 public class UcastniciController {
   private final List<Ucastnik> ucastnici;
 
