@@ -24,13 +24,10 @@
         </ul>
     </header>
 
-    <!--
-    Příklad výpisu data: <span th:text="${#temporals.format(date)}">21. dubna 2021</span>
-    Příklad výpisu času: <span th:text="${#temporals.format(time, 'H:mm')}">18:00</span>
-    -->
     <table class="table">
         <thead>
         <tr>
+            <th scope="col"></th>
             <th scope="col">Název lekce</th>
             <th scope="col">Datum</th>
             <th scope="col">Čas</th>
@@ -38,23 +35,20 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>Lekce 1</td>
-            <td>21. dubna 2021</td>
-            <td>18:00–20:30</td>
-            <td>V mechu</td>
-        </tr>
-        <tr>
-            <td>Lekce 2</td>
-            <td>28. dubna 2021</td>
-            <td>18:00–20:30</td>
-            <td>V kapradí</td>
-        </tr>
-        <tr>
-            <td>Lekce 3</td>
-            <td>5. května 2021</td>
-            <td>18:00–20:30</td>
-            <td><em>bude upřesněno</em></td>
+        <tr th:each="lekce, iterStat : ${seznamLekci}">
+            <td>
+                <span th:if="${iterStat.first}">🔫</span>
+                <span th:if="${iterStat.last}">🥇</span>
+            </td>
+            <td th:text="${lekce.nazev}">Lekce 1</td>
+            <td><span th:text="${#temporals.format(lekce.datum, 'EEE d. MMMM yyyy')}">21. dubna 2021</span></td>
+            <td>
+                <span th:text="${#temporals.format(lekce.casOd, 'H:mm')}">18:00</span>–<span th:text="${#temporals.format(lekce.casDo, 'H:mm')}">20:30</span>
+            </td>
+            <td>
+                <span th:if="${lekce.misto} != null" th:text="${lekce.misto}">V mechu</span>
+                <em th:unless="${lekce.misto} != null">bude upřesněno</em>
+            </td>
         </tr>
         </tbody>
     </table>
