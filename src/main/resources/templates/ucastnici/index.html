@@ -42,8 +42,8 @@
             <td th:text="${ucastnik.jmeno}">Medvídek</td>
             <td th:text="${ucastnik.prijmeni}">Pú</td>
             <td>
-                <span th:if="${ucastnik.bydliste != null}" th:text="${ucastnik.bydliste}">Stokorcový les</span>
-                <em th:if="${ucastnik.bydliste == null}">neuvedeno</em>
+                <span th:if="${ucastnik.bydliste} != null" th:text="${ucastnik.bydliste}">Stokorcový les</span>
+                <em th:if="${ucastnik.bydliste} == null">neuvedeno</em>
             </td>
             <td><a href="/ucastnici/detail" th:href="@{/ucastnici/detail(id=${iterStat.index})}"class="btn btn-primary">Detail</a></td>
         </tr>
