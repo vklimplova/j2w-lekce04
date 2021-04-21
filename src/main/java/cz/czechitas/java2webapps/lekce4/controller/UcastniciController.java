@@ -5,10 +5,8 @@ import cz.czechitas.java2webapps.lekce4.entity.Ucastnik;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -20,7 +18,7 @@ public class UcastniciController {
   private final List<Ucastnik> ucastnici;
 
   public UcastniciController() {
-    ucastnici = Arrays.asList(
+    ucastnici = List.of(
             new Ucastnik("Panenka", "Maková", "Mákovice", Pohlavi.ZENA, "https://www.postavy.cz/foto/makova-panenka-foto.jpg"),
             new Ucastnik("Emanuel", "Motýl", "Luční Bouda", Pohlavi.MUZ, "https://www.postavy.cz/foto/motyl-emanuel-foto.jpg"),
             new Ucastnik("Čarodějnice", "Malá", "Chaloupka", Pohlavi.ZENA, "https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=TRG002m"),
