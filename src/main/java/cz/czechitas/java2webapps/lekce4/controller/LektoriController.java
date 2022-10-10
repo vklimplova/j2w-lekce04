@@ -15,7 +15,8 @@ import java.util.List;
 public class LektoriController {
   private final List<Lektor> seznamLektoru = List.of(
           new Lektor("Víla", "Amálka", "workshopistka", "https://cdn.alza.cz/ImgW.ashx?fd=f16&cd=AKA264"),
-          new Lektor("", "Sněhurka", "lektor", "https://www.irozhlas.cz/sites/default/files/styles/zpravy_otvirak_velky/public/uploader/safina_171220-235119_ber.jpg?itok=xvalICib")
+          new Lektor("", "Sněhurka", "lektor", "https://www.irozhlas.cz/sites/default/files/styles/zpravy_otvirak_velky/public/uploader/safina_171220-235119_ber.jpg?itok=xvalICib"),
+          new Lektor("", "Rákosníček", "kouč", null)
   );
 
   @GetMapping("/")

@@ -10,7 +10,9 @@
     [#include '/_common/header.ftlh']
 
     <div class="card" style="width: 18rem;">
-        <img src="${lektor.profilovyObrazek}" class="card-img-top" alt="profilová fotka">
+        [#if lektor.profilovyObrazek?exists]
+            <img src="${lektor.profilovyObrazek}" class="card-img-top" alt="profilová fotka">
+        [/#if]
         <div class="card-body">
             <h5 class="card-title">${lektor.jmeno} ${lektor.prijmeni}</h5>
             <p class="card-text">Role: ${lektor.role}</p>
