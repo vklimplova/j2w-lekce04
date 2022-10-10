@@ -6,4 +6,4 @@ Dnešní lekce bude plná seznamů. Vytvoříme si webové stránky, na kterých
 1. Naklonuj si repository **ze svého účtu** na GitHubu na lokální počítač.
 
 ## Odkazy
-* [Lekce 4](https://java.czechitas.cz/2021-jaro/java-2/lekce-4.html)
+* [Lekce 4](https://java.czechitas.cz/2022-podzim/java-2/lekce-4.html)
