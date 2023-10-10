@@ -10,7 +10,7 @@
     [#include '/_common/header.ftlh']
 
     <div class="card" style="width: 18rem;">
-        [#if lektor.profilovyObrazek?exists]
+        [#if lektor.profilovyObrazek??]
             <img src="${lektor.profilovyObrazek}" class="card-img-top" alt="profilová fotka">
         [/#if]
         <div class="card-body">
